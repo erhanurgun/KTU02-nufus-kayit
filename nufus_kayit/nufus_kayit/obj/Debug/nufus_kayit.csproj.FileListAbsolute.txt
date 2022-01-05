@@ -1,0 +1,11 @@
+D:\PROJECTS\ProgramlamaDilleri\CSharp\_ktu_\KTU02-nufus-kayit\nufus_kayit\nufus_kayit\bin\Debug\nufus_kayit.exe.config
+D:\PROJECTS\ProgramlamaDilleri\CSharp\_ktu_\KTU02-nufus-kayit\nufus_kayit\nufus_kayit\bin\Debug\nufus_kayit.exe
+D:\PROJECTS\ProgramlamaDilleri\CSharp\_ktu_\KTU02-nufus-kayit\nufus_kayit\nufus_kayit\bin\Debug\nufus_kayit.pdb
+D:\PROJECTS\ProgramlamaDilleri\CSharp\_ktu_\KTU02-nufus-kayit\nufus_kayit\nufus_kayit\obj\Debug\nufus_kayit.csproj.AssemblyReference.cache
+D:\PROJECTS\ProgramlamaDilleri\CSharp\_ktu_\KTU02-nufus-kayit\nufus_kayit\nufus_kayit\obj\Debug\nufus_kayit.frmGiris.resources
+D:\PROJECTS\ProgramlamaDilleri\CSharp\_ktu_\KTU02-nufus-kayit\nufus_kayit\nufus_kayit\obj\Debug\nufus_kayit.frmVatandas.resources
+D:\PROJECTS\ProgramlamaDilleri\CSharp\_ktu_\KTU02-nufus-kayit\nufus_kayit\nufus_kayit\obj\Debug\nufus_kayit.Properties.Resources.resources
+D:\PROJECTS\ProgramlamaDilleri\CSharp\_ktu_\KTU02-nufus-kayit\nufus_kayit\nufus_kayit\obj\Debug\nufus_kayit.csproj.GenerateResource.cache
+D:\PROJECTS\ProgramlamaDilleri\CSharp\_ktu_\KTU02-nufus-kayit\nufus_kayit\nufus_kayit\obj\Debug\nufus_kayit.csproj.CoreCompileInputs.cache
+D:\PROJECTS\ProgramlamaDilleri\CSharp\_ktu_\KTU02-nufus-kayit\nufus_kayit\nufus_kayit\obj\Debug\nufus_kayit.exe
+D:\PROJECTS\ProgramlamaDilleri\CSharp\_ktu_\KTU02-nufus-kayit\nufus_kayit\nufus_kayit\obj\Debug\nufus_kayit.pdb
