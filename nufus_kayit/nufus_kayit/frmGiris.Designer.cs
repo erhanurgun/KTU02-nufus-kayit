@@ -29,6 +29,7 @@ namespace nufus_kayit
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGiris));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.chbBeniHatirla = new System.Windows.Forms.CheckBox();
             this.btnGiris = new System.Windows.Forms.Button();
@@ -75,6 +76,7 @@ namespace nufus_kayit
             this.btnGiris.TabIndex = 3;
             this.btnGiris.Text = " 🔒 GİRİŞ YAP";
             this.btnGiris.UseVisualStyleBackColor = true;
+            this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
             // 
             // linkSifrem
             // 
@@ -85,6 +87,7 @@ namespace nufus_kayit
             this.linkSifrem.TabIndex = 5;
             this.linkSifrem.TabStop = true;
             this.linkSifrem.Text = "Şifreni mi unuttun ?";
+            this.linkSifrem.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkSifrem_LinkClicked);
             // 
             // txtSifre
             // 
@@ -128,6 +131,7 @@ namespace nufus_kayit
             this.linkWebsite.TabIndex = 9;
             this.linkWebsite.TabStop = true;
             this.linkWebsite.Text = "www.erhanurgun.com.tr";
+            this.linkWebsite.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkWebsite_LinkClicked);
             // 
             // label3
             // 
@@ -147,8 +151,15 @@ namespace nufus_kayit
             this.Controls.Add(this.linkWebsite);
             this.Controls.Add(this.label3);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(335, 276);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(335, 276);
             this.Name = "frmGiris";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Yetkili Girişi";
+            this.Load += new System.EventHandler(this.frmGiris_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

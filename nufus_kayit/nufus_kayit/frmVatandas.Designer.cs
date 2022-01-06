@@ -29,6 +29,8 @@ namespace nufus_kayit
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVatandas));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupButon = new System.Windows.Forms.GroupBox();
@@ -36,8 +38,8 @@ namespace nufus_kayit
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnSil = new System.Windows.Forms.Button();
             this.btnKaydet = new System.Windows.Forms.Button();
-            this.groupAdres = new System.Windows.Forms.GroupBox();
-            this.rtxtAcikAdres = new System.Windows.Forms.RichTextBox();
+            this.grpAdres = new System.Windows.Forms.GroupBox();
+            this.rtxtAdres = new System.Windows.Forms.RichTextBox();
             this.cmbUlke = new System.Windows.Forms.ComboBox();
             this.label39 = new System.Windows.Forms.Label();
             this.cmbIl = new System.Windows.Forms.ComboBox();
@@ -45,7 +47,7 @@ namespace nufus_kayit
             this.label6 = new System.Windows.Forms.Label();
             this.cmbIlce = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.groupKisi = new System.Windows.Forms.GroupBox();
+            this.grpKisi = new System.Windows.Forms.GroupBox();
             this.cmbVerilisTuru = new System.Windows.Forms.ComboBox();
             this.label25 = new System.Windows.Forms.Label();
             this.mtxtTelefon = new System.Windows.Forms.MaskedTextBox();
@@ -61,9 +63,7 @@ namespace nufus_kayit
             this.label2 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.rbtnKadin = new System.Windows.Forms.RadioButton();
-            this.label33 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
             this.rbtnErkek = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -73,9 +73,7 @@ namespace nufus_kayit
             this.label18 = new System.Windows.Forms.Label();
             this.txtBireySiraNo = new System.Windows.Forms.TextBox();
             this.txtCiltNo = new System.Windows.Forms.TextBox();
-            this.txtKilo = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.txtBoy = new System.Windows.Forms.TextBox();
             this.txtSeriNo = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -83,21 +81,16 @@ namespace nufus_kayit
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.groupDiger = new System.Windows.Forms.GroupBox();
+            this.grpDiger = new System.Windows.Forms.GroupBox();
             this.btnSecImza = new System.Windows.Forms.Button();
             this.btnSecFoto = new System.Windows.Forms.Button();
-            this.chSagMi = new System.Windows.Forms.CheckBox();
-            this.dateOlumTarihi = new System.Windows.Forms.DateTimePicker();
+            this.picImza = new System.Windows.Forms.PictureBox();
             this.picFotograf = new System.Windows.Forms.PictureBox();
-            this.dateKimlikVerTarihi = new System.Windows.Forms.DateTimePicker();
             this.txtImgImza = new System.Windows.Forms.TextBox();
             this.dateKimlikGecTarihi = new System.Windows.Forms.DateTimePicker();
             this.txtImgFoto = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.txtVerenMakam = new System.Windows.Forms.TextBox();
@@ -110,28 +103,30 @@ namespace nufus_kayit
             this.txtTcAra = new System.Windows.Forms.TextBox();
             this.btnKayitAra = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.picImza = new System.Windows.Forms.PictureBox();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
             this.btnAyarKaydet = new System.Windows.Forms.Button();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
-            this.cmbYukleniyor = new System.Windows.Forms.CheckBox();
-            this.cmbIkonGoster = new System.Windows.Forms.CheckBox();
-            this.cmbBasCalistir = new System.Windows.Forms.CheckBox();
+            this.chbYukleniyor = new System.Windows.Forms.CheckBox();
+            this.chbIkonGoster = new System.Windows.Forms.CheckBox();
+            this.chbBasCalistir = new System.Windows.Forms.CheckBox();
+            this.tmrZamanlama = new System.Windows.Forms.Timer(this.components);
+            this.errHataMesaji = new System.Windows.Forms.ErrorProvider(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupButon.SuspendLayout();
-            this.groupAdres.SuspendLayout();
-            this.groupKisi.SuspendLayout();
-            this.groupDiger.SuspendLayout();
+            this.grpAdres.SuspendLayout();
+            this.grpKisi.SuspendLayout();
+            this.grpDiger.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picImza)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFotograf)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataKayitListesi)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picImza)).BeginInit();
             this.groupBox19.SuspendLayout();
             this.groupBox18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errHataMesaji)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -142,19 +137,19 @@ namespace nufus_kayit
             this.tabControl1.Location = new System.Drawing.Point(6, 7);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(724, 679);
+            this.tabControl1.Size = new System.Drawing.Size(724, 628);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.groupButon);
-            this.tabPage1.Controls.Add(this.groupAdres);
-            this.tabPage1.Controls.Add(this.groupKisi);
-            this.tabPage1.Controls.Add(this.groupDiger);
+            this.tabPage1.Controls.Add(this.grpAdres);
+            this.tabPage1.Controls.Add(this.grpKisi);
+            this.tabPage1.Controls.Add(this.grpDiger);
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(716, 651);
+            this.tabPage1.Size = new System.Drawing.Size(716, 600);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "👥 Vatandaşlar";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -165,7 +160,7 @@ namespace nufus_kayit
             this.groupButon.Controls.Add(this.btnGuncelle);
             this.groupButon.Controls.Add(this.btnSil);
             this.groupButon.Controls.Add(this.btnKaydet);
-            this.groupButon.Location = new System.Drawing.Point(7, 564);
+            this.groupButon.Location = new System.Drawing.Point(7, 516);
             this.groupButon.Name = "groupButon";
             this.groupButon.Size = new System.Drawing.Size(698, 75);
             this.groupButon.TabIndex = 14;
@@ -179,6 +174,7 @@ namespace nufus_kayit
             this.btnTemizle.TabIndex = 47;
             this.btnTemizle.Text = "👁️ TEMİZLE";
             this.btnTemizle.UseVisualStyleBackColor = true;
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
             // 
             // btnGuncelle
             // 
@@ -208,35 +204,37 @@ namespace nufus_kayit
             this.btnKaydet.TabIndex = 44;
             this.btnKaydet.Text = "💾 KAYDET";
             this.btnKaydet.UseVisualStyleBackColor = true;
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
-            // groupAdres
+            // grpAdres
             // 
-            this.groupAdres.Controls.Add(this.rtxtAcikAdres);
-            this.groupAdres.Controls.Add(this.cmbUlke);
-            this.groupAdres.Controls.Add(this.label39);
-            this.groupAdres.Controls.Add(this.cmbIl);
-            this.groupAdres.Controls.Add(this.label5);
-            this.groupAdres.Controls.Add(this.label6);
-            this.groupAdres.Controls.Add(this.cmbIlce);
-            this.groupAdres.Controls.Add(this.label34);
-            this.groupAdres.Location = new System.Drawing.Point(365, 7);
-            this.groupAdres.Name = "groupAdres";
-            this.groupAdres.Size = new System.Drawing.Size(340, 204);
-            this.groupAdres.TabIndex = 10;
-            this.groupAdres.TabStop = false;
-            this.groupAdres.Text = " 🗺️ Adres Bilgileri ";
+            this.grpAdres.Controls.Add(this.rtxtAdres);
+            this.grpAdres.Controls.Add(this.cmbUlke);
+            this.grpAdres.Controls.Add(this.label39);
+            this.grpAdres.Controls.Add(this.cmbIl);
+            this.grpAdres.Controls.Add(this.label5);
+            this.grpAdres.Controls.Add(this.label6);
+            this.grpAdres.Controls.Add(this.cmbIlce);
+            this.grpAdres.Controls.Add(this.label34);
+            this.grpAdres.Location = new System.Drawing.Point(365, 7);
+            this.grpAdres.Name = "grpAdres";
+            this.grpAdres.Size = new System.Drawing.Size(340, 220);
+            this.grpAdres.TabIndex = 10;
+            this.grpAdres.TabStop = false;
+            this.grpAdres.Text = " 🗺️ Adres Bilgileri ";
             // 
-            // rtxtAcikAdres
+            // rtxtAdres
             // 
-            this.rtxtAcikAdres.Enabled = false;
-            this.rtxtAcikAdres.Location = new System.Drawing.Point(122, 119);
-            this.rtxtAcikAdres.Name = "rtxtAcikAdres";
-            this.rtxtAcikAdres.Size = new System.Drawing.Size(186, 65);
-            this.rtxtAcikAdres.TabIndex = 24;
-            this.rtxtAcikAdres.Text = "";
+            this.rtxtAdres.Enabled = false;
+            this.rtxtAdres.Location = new System.Drawing.Point(122, 119);
+            this.rtxtAdres.Name = "rtxtAdres";
+            this.rtxtAdres.Size = new System.Drawing.Size(186, 72);
+            this.rtxtAdres.TabIndex = 24;
+            this.rtxtAdres.Text = "";
             // 
             // cmbUlke
             // 
+            this.cmbUlke.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbUlke.FormattingEnabled = true;
             this.cmbUlke.Items.AddRange(new object[] {
             "Türkiye"});
@@ -244,6 +242,7 @@ namespace nufus_kayit
             this.cmbUlke.Name = "cmbUlke";
             this.cmbUlke.Size = new System.Drawing.Size(187, 23);
             this.cmbUlke.TabIndex = 21;
+            this.cmbUlke.SelectedIndexChanged += new System.EventHandler(this.cmbUlke_SelectedIndexChanged);
             // 
             // label39
             // 
@@ -256,12 +255,14 @@ namespace nufus_kayit
             // 
             // cmbIl
             // 
+            this.cmbIl.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbIl.Enabled = false;
             this.cmbIl.FormattingEnabled = true;
             this.cmbIl.Location = new System.Drawing.Point(121, 57);
             this.cmbIl.Name = "cmbIl";
             this.cmbIl.Size = new System.Drawing.Size(186, 23);
             this.cmbIl.TabIndex = 22;
+            this.cmbIl.SelectedIndexChanged += new System.EventHandler(this.cmbIl_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -275,7 +276,7 @@ namespace nufus_kayit
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(78, 90);
+            this.label6.Location = new System.Drawing.Point(77, 91);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(32, 16);
             this.label6.TabIndex = 1;
@@ -283,67 +284,65 @@ namespace nufus_kayit
             // 
             // cmbIlce
             // 
+            this.cmbIlce.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbIlce.Enabled = false;
             this.cmbIlce.FormattingEnabled = true;
             this.cmbIlce.Location = new System.Drawing.Point(122, 87);
             this.cmbIlce.Name = "cmbIlce";
             this.cmbIlce.Size = new System.Drawing.Size(185, 23);
             this.cmbIlce.TabIndex = 23;
+            this.cmbIlce.SelectedIndexChanged += new System.EventHandler(this.cmbIlce_SelectedIndexChanged);
             // 
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(63, 122);
+            this.label34.Location = new System.Drawing.Point(63, 120);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(47, 16);
             this.label34.TabIndex = 1;
             this.label34.Text = "Adres:";
             // 
-            // groupKisi
+            // grpKisi
             // 
-            this.groupKisi.Controls.Add(this.cmbVerilisTuru);
-            this.groupKisi.Controls.Add(this.label25);
-            this.groupKisi.Controls.Add(this.mtxtTelefon);
-            this.groupKisi.Controls.Add(this.label26);
-            this.groupKisi.Controls.Add(this.txtTc);
-            this.groupKisi.Controls.Add(this.txtBabaAdi);
-            this.groupKisi.Controls.Add(this.txtAd);
-            this.groupKisi.Controls.Add(this.txtSoyad);
-            this.groupKisi.Controls.Add(this.dateDogumTarihi);
-            this.groupKisi.Controls.Add(this.txtAnaAdi);
-            this.groupKisi.Controls.Add(this.label1);
-            this.groupKisi.Controls.Add(this.cmbMedeniHali);
-            this.groupKisi.Controls.Add(this.label2);
-            this.groupKisi.Controls.Add(this.label21);
-            this.groupKisi.Controls.Add(this.rbtnKadin);
-            this.groupKisi.Controls.Add(this.label33);
-            this.groupKisi.Controls.Add(this.label3);
-            this.groupKisi.Controls.Add(this.label32);
-            this.groupKisi.Controls.Add(this.rbtnErkek);
-            this.groupKisi.Controls.Add(this.label4);
-            this.groupKisi.Controls.Add(this.label8);
-            this.groupKisi.Controls.Add(this.txtAileSiraNo);
-            this.groupKisi.Controls.Add(this.label19);
-            this.groupKisi.Controls.Add(this.txtDogumYeri);
-            this.groupKisi.Controls.Add(this.label18);
-            this.groupKisi.Controls.Add(this.txtBireySiraNo);
-            this.groupKisi.Controls.Add(this.txtCiltNo);
-            this.groupKisi.Controls.Add(this.txtKilo);
-            this.groupKisi.Controls.Add(this.label37);
-            this.groupKisi.Controls.Add(this.txtBoy);
-            this.groupKisi.Controls.Add(this.txtSeriNo);
-            this.groupKisi.Controls.Add(this.label9);
-            this.groupKisi.Controls.Add(this.txtEmail);
-            this.groupKisi.Controls.Add(this.label20);
-            this.groupKisi.Controls.Add(this.label10);
-            this.groupKisi.Controls.Add(this.label11);
-            this.groupKisi.Controls.Add(this.label12);
-            this.groupKisi.Location = new System.Drawing.Point(7, 7);
-            this.groupKisi.Name = "groupKisi";
-            this.groupKisi.Size = new System.Drawing.Size(351, 556);
-            this.groupKisi.TabIndex = 9;
-            this.groupKisi.TabStop = false;
-            this.groupKisi.Text = " 👤 Temel Bilgiler ";
+            this.grpKisi.Controls.Add(this.cmbVerilisTuru);
+            this.grpKisi.Controls.Add(this.label25);
+            this.grpKisi.Controls.Add(this.mtxtTelefon);
+            this.grpKisi.Controls.Add(this.label26);
+            this.grpKisi.Controls.Add(this.txtTc);
+            this.grpKisi.Controls.Add(this.txtBabaAdi);
+            this.grpKisi.Controls.Add(this.txtAd);
+            this.grpKisi.Controls.Add(this.txtSoyad);
+            this.grpKisi.Controls.Add(this.dateDogumTarihi);
+            this.grpKisi.Controls.Add(this.txtAnaAdi);
+            this.grpKisi.Controls.Add(this.label1);
+            this.grpKisi.Controls.Add(this.cmbMedeniHali);
+            this.grpKisi.Controls.Add(this.label2);
+            this.grpKisi.Controls.Add(this.label21);
+            this.grpKisi.Controls.Add(this.rbtnKadin);
+            this.grpKisi.Controls.Add(this.label3);
+            this.grpKisi.Controls.Add(this.rbtnErkek);
+            this.grpKisi.Controls.Add(this.label4);
+            this.grpKisi.Controls.Add(this.label8);
+            this.grpKisi.Controls.Add(this.txtAileSiraNo);
+            this.grpKisi.Controls.Add(this.label19);
+            this.grpKisi.Controls.Add(this.txtDogumYeri);
+            this.grpKisi.Controls.Add(this.label18);
+            this.grpKisi.Controls.Add(this.txtBireySiraNo);
+            this.grpKisi.Controls.Add(this.txtCiltNo);
+            this.grpKisi.Controls.Add(this.label37);
+            this.grpKisi.Controls.Add(this.txtSeriNo);
+            this.grpKisi.Controls.Add(this.label9);
+            this.grpKisi.Controls.Add(this.txtEmail);
+            this.grpKisi.Controls.Add(this.label20);
+            this.grpKisi.Controls.Add(this.label10);
+            this.grpKisi.Controls.Add(this.label11);
+            this.grpKisi.Controls.Add(this.label12);
+            this.grpKisi.Location = new System.Drawing.Point(7, 7);
+            this.grpKisi.Name = "grpKisi";
+            this.grpKisi.Size = new System.Drawing.Size(351, 509);
+            this.grpKisi.TabIndex = 9;
+            this.grpKisi.TabStop = false;
+            this.grpKisi.Text = " 👤 Temel Bilgiler ";
             // 
             // cmbVerilisTuru
             // 
@@ -352,7 +351,7 @@ namespace nufus_kayit
             this.cmbVerilisTuru.Items.AddRange(new object[] {
             "Yeni Kayıt",
             "Kimlik Yenileme"});
-            this.cmbVerilisTuru.Location = new System.Drawing.Point(125, 27);
+            this.cmbVerilisTuru.Location = new System.Drawing.Point(129, 27);
             this.cmbVerilisTuru.Name = "cmbVerilisTuru";
             this.cmbVerilisTuru.Size = new System.Drawing.Size(186, 23);
             this.cmbVerilisTuru.TabIndex = 22;
@@ -360,7 +359,7 @@ namespace nufus_kayit
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(39, 31);
+            this.label25.Location = new System.Drawing.Point(43, 31);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(78, 16);
             this.label25.TabIndex = 21;
@@ -368,7 +367,7 @@ namespace nufus_kayit
             // 
             // mtxtTelefon
             // 
-            this.mtxtTelefon.Location = new System.Drawing.Point(126, 384);
+            this.mtxtTelefon.Location = new System.Drawing.Point(130, 400);
             this.mtxtTelefon.Mask = "(999) 000-0000";
             this.mtxtTelefon.Name = "mtxtTelefon";
             this.mtxtTelefon.Size = new System.Drawing.Size(185, 21);
@@ -377,37 +376,37 @@ namespace nufus_kayit
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(85, 57);
+            this.label26.Location = new System.Drawing.Point(63, 61);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(32, 16);
+            this.label26.Size = new System.Drawing.Size(59, 16);
             this.label26.TabIndex = 1;
-            this.label26.Text = "TC: ";
+            this.label26.Text = "T.C. No: ";
             // 
             // txtTc
             // 
             this.txtTc.Enabled = false;
-            this.txtTc.Location = new System.Drawing.Point(125, 55);
+            this.txtTc.Location = new System.Drawing.Point(129, 58);
             this.txtTc.Name = "txtTc";
             this.txtTc.Size = new System.Drawing.Size(186, 21);
             this.txtTc.TabIndex = 1;
             // 
             // txtBabaAdi
             // 
-            this.txtBabaAdi.Location = new System.Drawing.Point(125, 163);
+            this.txtBabaAdi.Location = new System.Drawing.Point(129, 170);
             this.txtBabaAdi.Name = "txtBabaAdi";
             this.txtBabaAdi.Size = new System.Drawing.Size(186, 21);
             this.txtBabaAdi.TabIndex = 5;
             // 
             // txtAd
             // 
-            this.txtAd.Location = new System.Drawing.Point(125, 82);
+            this.txtAd.Location = new System.Drawing.Point(129, 86);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(186, 21);
             this.txtAd.TabIndex = 2;
             // 
             // txtSoyad
             // 
-            this.txtSoyad.Location = new System.Drawing.Point(125, 109);
+            this.txtSoyad.Location = new System.Drawing.Point(129, 114);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(186, 21);
             this.txtSoyad.TabIndex = 3;
@@ -415,14 +414,14 @@ namespace nufus_kayit
             // dateDogumTarihi
             // 
             this.dateDogumTarihi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateDogumTarihi.Location = new System.Drawing.Point(125, 191);
+            this.dateDogumTarihi.Location = new System.Drawing.Point(129, 200);
             this.dateDogumTarihi.Name = "dateDogumTarihi";
             this.dateDogumTarihi.Size = new System.Drawing.Size(186, 21);
             this.dateDogumTarihi.TabIndex = 6;
             // 
             // txtAnaAdi
             // 
-            this.txtAnaAdi.Location = new System.Drawing.Point(125, 136);
+            this.txtAnaAdi.Location = new System.Drawing.Point(129, 142);
             this.txtAnaAdi.Name = "txtAnaAdi";
             this.txtAnaAdi.Size = new System.Drawing.Size(186, 21);
             this.txtAnaAdi.TabIndex = 4;
@@ -430,11 +429,11 @@ namespace nufus_kayit
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(86, 85);
+            this.label1.Location = new System.Drawing.Point(88, 89);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 16);
+            this.label1.Size = new System.Drawing.Size(34, 16);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Ad: ";
+            this.label1.Text = "Adı: ";
             // 
             // cmbMedeniHali
             // 
@@ -445,7 +444,7 @@ namespace nufus_kayit
             "Bekar",
             "Dul",
             "Boşanmış"});
-            this.cmbMedeniHali.Location = new System.Drawing.Point(125, 355);
+            this.cmbMedeniHali.Location = new System.Drawing.Point(129, 370);
             this.cmbMedeniHali.Name = "cmbMedeniHali";
             this.cmbMedeniHali.Size = new System.Drawing.Size(186, 23);
             this.cmbMedeniHali.TabIndex = 13;
@@ -453,16 +452,16 @@ namespace nufus_kayit
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(63, 112);
+            this.label2.Location = new System.Drawing.Point(65, 117);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 16);
+            this.label2.Size = new System.Drawing.Size(57, 16);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Soyad: ";
+            this.label2.Text = "Soyadı: ";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(30, 358);
+            this.label21.Location = new System.Drawing.Point(34, 373);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(83, 16);
             this.label21.TabIndex = 1;
@@ -471,7 +470,7 @@ namespace nufus_kayit
             // rbtnKadin
             // 
             this.rbtnKadin.AutoSize = true;
-            this.rbtnKadin.Location = new System.Drawing.Point(224, 505);
+            this.rbtnKadin.Location = new System.Drawing.Point(229, 464);
             this.rbtnKadin.Name = "rbtnKadin";
             this.rbtnKadin.Size = new System.Drawing.Size(60, 20);
             this.rbtnKadin.TabIndex = 20;
@@ -479,37 +478,19 @@ namespace nufus_kayit
             this.rbtnKadin.Text = "Kadın";
             this.rbtnKadin.UseVisualStyleBackColor = true;
             // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(78, 469);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(33, 16);
-            this.label33.TabIndex = 1;
-            this.label33.Text = "Kilo:";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(49, 139);
+            this.label3.Location = new System.Drawing.Point(53, 145);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 16);
             this.label3.TabIndex = 1;
             this.label3.Text = "Anne Adı:";
             // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(78, 442);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(35, 16);
-            this.label32.TabIndex = 1;
-            this.label32.Text = "Boy:";
-            // 
             // rbtnErkek
             // 
             this.rbtnErkek.AutoSize = true;
-            this.rbtnErkek.Location = new System.Drawing.Point(143, 505);
+            this.rbtnErkek.Location = new System.Drawing.Point(147, 464);
             this.rbtnErkek.Name = "rbtnErkek";
             this.rbtnErkek.Size = new System.Drawing.Size(61, 20);
             this.rbtnErkek.TabIndex = 19;
@@ -520,7 +501,7 @@ namespace nufus_kayit
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(49, 166);
+            this.label4.Location = new System.Drawing.Point(53, 173);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 16);
             this.label4.TabIndex = 1;
@@ -529,7 +510,7 @@ namespace nufus_kayit
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(25, 195);
+            this.label8.Location = new System.Drawing.Point(29, 204);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(92, 16);
             this.label8.TabIndex = 1;
@@ -537,7 +518,7 @@ namespace nufus_kayit
             // 
             // txtAileSiraNo
             // 
-            this.txtAileSiraNo.Location = new System.Drawing.Point(125, 245);
+            this.txtAileSiraNo.Location = new System.Drawing.Point(129, 257);
             this.txtAileSiraNo.Name = "txtAileSiraNo";
             this.txtAileSiraNo.Size = new System.Drawing.Size(186, 21);
             this.txtAileSiraNo.TabIndex = 8;
@@ -545,7 +526,7 @@ namespace nufus_kayit
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(68, 415);
+            this.label19.Location = new System.Drawing.Point(72, 431);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(45, 16);
             this.label19.TabIndex = 1;
@@ -553,7 +534,7 @@ namespace nufus_kayit
             // 
             // txtDogumYeri
             // 
-            this.txtDogumYeri.Location = new System.Drawing.Point(125, 218);
+            this.txtDogumYeri.Location = new System.Drawing.Point(129, 229);
             this.txtDogumYeri.Name = "txtDogumYeri";
             this.txtDogumYeri.Size = new System.Drawing.Size(186, 21);
             this.txtDogumYeri.TabIndex = 7;
@@ -561,7 +542,7 @@ namespace nufus_kayit
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(56, 387);
+            this.label18.Location = new System.Drawing.Point(60, 403);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(57, 16);
             this.label18.TabIndex = 1;
@@ -569,45 +550,31 @@ namespace nufus_kayit
             // 
             // txtBireySiraNo
             // 
-            this.txtBireySiraNo.Location = new System.Drawing.Point(125, 272);
+            this.txtBireySiraNo.Location = new System.Drawing.Point(129, 285);
             this.txtBireySiraNo.Name = "txtBireySiraNo";
             this.txtBireySiraNo.Size = new System.Drawing.Size(186, 21);
             this.txtBireySiraNo.TabIndex = 9;
             // 
             // txtCiltNo
             // 
-            this.txtCiltNo.Location = new System.Drawing.Point(125, 299);
+            this.txtCiltNo.Location = new System.Drawing.Point(129, 313);
             this.txtCiltNo.Name = "txtCiltNo";
             this.txtCiltNo.Size = new System.Drawing.Size(186, 21);
             this.txtCiltNo.TabIndex = 10;
             // 
-            // txtKilo
-            // 
-            this.txtKilo.Location = new System.Drawing.Point(125, 466);
-            this.txtKilo.Name = "txtKilo";
-            this.txtKilo.Size = new System.Drawing.Size(186, 21);
-            this.txtKilo.TabIndex = 18;
-            // 
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(32, 248);
+            this.label37.Location = new System.Drawing.Point(36, 260);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(82, 16);
             this.label37.TabIndex = 1;
             this.label37.Text = "Aile Sıra No:";
             // 
-            // txtBoy
-            // 
-            this.txtBoy.Location = new System.Drawing.Point(125, 439);
-            this.txtBoy.Name = "txtBoy";
-            this.txtBoy.Size = new System.Drawing.Size(186, 21);
-            this.txtBoy.TabIndex = 17;
-            // 
             // txtSeriNo
             // 
             this.txtSeriNo.Enabled = false;
-            this.txtSeriNo.Location = new System.Drawing.Point(125, 327);
+            this.txtSeriNo.Location = new System.Drawing.Point(129, 341);
             this.txtSeriNo.Name = "txtSeriNo";
             this.txtSeriNo.Size = new System.Drawing.Size(186, 21);
             this.txtSeriNo.TabIndex = 11;
@@ -615,7 +582,7 @@ namespace nufus_kayit
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(32, 221);
+            this.label9.Location = new System.Drawing.Point(36, 232);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(82, 16);
             this.label9.TabIndex = 1;
@@ -623,7 +590,7 @@ namespace nufus_kayit
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(125, 412);
+            this.txtEmail.Location = new System.Drawing.Point(129, 428);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(186, 21);
             this.txtEmail.TabIndex = 16;
@@ -631,7 +598,7 @@ namespace nufus_kayit
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(24, 274);
+            this.label20.Location = new System.Drawing.Point(28, 287);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(90, 16);
             this.label20.TabIndex = 1;
@@ -640,7 +607,7 @@ namespace nufus_kayit
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(63, 301);
+            this.label10.Location = new System.Drawing.Point(67, 315);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(50, 16);
             this.label10.TabIndex = 1;
@@ -649,7 +616,7 @@ namespace nufus_kayit
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(58, 329);
+            this.label11.Location = new System.Drawing.Point(62, 343);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(56, 16);
             this.label11.TabIndex = 1;
@@ -658,97 +625,78 @@ namespace nufus_kayit
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(54, 505);
+            this.label12.Location = new System.Drawing.Point(58, 465);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(58, 16);
             this.label12.TabIndex = 1;
             this.label12.Text = "Cinsiyet:";
             // 
-            // groupDiger
+            // grpDiger
             // 
-            this.groupDiger.Controls.Add(this.btnSecImza);
-            this.groupDiger.Controls.Add(this.btnSecFoto);
-            this.groupDiger.Controls.Add(this.chSagMi);
-            this.groupDiger.Controls.Add(this.dateOlumTarihi);
-            this.groupDiger.Controls.Add(this.picImza);
-            this.groupDiger.Controls.Add(this.picFotograf);
-            this.groupDiger.Controls.Add(this.dateKimlikVerTarihi);
-            this.groupDiger.Controls.Add(this.txtImgImza);
-            this.groupDiger.Controls.Add(this.dateKimlikGecTarihi);
-            this.groupDiger.Controls.Add(this.txtImgFoto);
-            this.groupDiger.Controls.Add(this.label22);
-            this.groupDiger.Controls.Add(this.label17);
-            this.groupDiger.Controls.Add(this.label24);
-            this.groupDiger.Controls.Add(this.label16);
-            this.groupDiger.Controls.Add(this.label7);
-            this.groupDiger.Controls.Add(this.label14);
-            this.groupDiger.Controls.Add(this.label15);
-            this.groupDiger.Controls.Add(this.txtVerenMakam);
-            this.groupDiger.Location = new System.Drawing.Point(365, 211);
-            this.groupDiger.Name = "groupDiger";
-            this.groupDiger.Size = new System.Drawing.Size(340, 352);
-            this.groupDiger.TabIndex = 8;
-            this.groupDiger.TabStop = false;
-            this.groupDiger.Text = " 📙 Diğer Bilgiler ";
+            this.grpDiger.Controls.Add(this.btnSecImza);
+            this.grpDiger.Controls.Add(this.btnSecFoto);
+            this.grpDiger.Controls.Add(this.picImza);
+            this.grpDiger.Controls.Add(this.picFotograf);
+            this.grpDiger.Controls.Add(this.txtImgImza);
+            this.grpDiger.Controls.Add(this.dateKimlikGecTarihi);
+            this.grpDiger.Controls.Add(this.txtImgFoto);
+            this.grpDiger.Controls.Add(this.label17);
+            this.grpDiger.Controls.Add(this.label16);
+            this.grpDiger.Controls.Add(this.label14);
+            this.grpDiger.Controls.Add(this.label15);
+            this.grpDiger.Controls.Add(this.txtVerenMakam);
+            this.grpDiger.Location = new System.Drawing.Point(363, 227);
+            this.grpDiger.Name = "grpDiger";
+            this.grpDiger.Size = new System.Drawing.Size(340, 289);
+            this.grpDiger.TabIndex = 8;
+            this.grpDiger.TabStop = false;
+            this.grpDiger.Text = " 📙 Diğer Bilgiler ";
             // 
             // btnSecImza
             // 
-            this.btnSecImza.Location = new System.Drawing.Point(281, 199);
+            this.btnSecImza.Location = new System.Drawing.Point(282, 122);
             this.btnSecImza.Name = "btnSecImza";
             this.btnSecImza.Size = new System.Drawing.Size(27, 23);
             this.btnSecImza.TabIndex = 43;
             this.btnSecImza.Text = "...";
             this.btnSecImza.UseVisualStyleBackColor = true;
+            this.btnSecImza.Click += new System.EventHandler(this.btnSecImza_Click);
             // 
             // btnSecFoto
             // 
-            this.btnSecFoto.Location = new System.Drawing.Point(280, 168);
+            this.btnSecFoto.Location = new System.Drawing.Point(281, 91);
             this.btnSecFoto.Name = "btnSecFoto";
             this.btnSecFoto.Size = new System.Drawing.Size(27, 23);
             this.btnSecFoto.TabIndex = 41;
             this.btnSecFoto.Text = "...";
             this.btnSecFoto.UseVisualStyleBackColor = true;
+            this.btnSecFoto.Click += new System.EventHandler(this.btnSecFoto_Click);
             // 
-            // chSagMi
+            // picImza
             // 
-            this.chSagMi.AutoSize = true;
-            this.chSagMi.Location = new System.Drawing.Point(121, 114);
-            this.chSagMi.Name = "chSagMi";
-            this.chSagMi.Size = new System.Drawing.Size(54, 20);
-            this.chSagMi.TabIndex = 38;
-            this.chSagMi.Text = "Evet";
-            this.chSagMi.UseVisualStyleBackColor = true;
-            // 
-            // dateOlumTarihi
-            // 
-            this.dateOlumTarihi.Enabled = false;
-            this.dateOlumTarihi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateOlumTarihi.Location = new System.Drawing.Point(121, 137);
-            this.dateOlumTarihi.Name = "dateOlumTarihi";
-            this.dateOlumTarihi.Size = new System.Drawing.Size(186, 21);
-            this.dateOlumTarihi.TabIndex = 39;
+            this.picImza.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picImza.Image = global::nufus_kayit.Properties.Resources.no_photo;
+            this.picImza.Location = new System.Drawing.Point(195, 161);
+            this.picImza.Name = "picImza";
+            this.picImza.Size = new System.Drawing.Size(113, 101);
+            this.picImza.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picImza.TabIndex = 8;
+            this.picImza.TabStop = false;
             // 
             // picFotograf
             // 
+            this.picFotograf.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picFotograf.Image = global::nufus_kayit.Properties.Resources.no_photo;
-            this.picFotograf.Location = new System.Drawing.Point(49, 231);
+            this.picFotograf.Location = new System.Drawing.Point(50, 161);
             this.picFotograf.Name = "picFotograf";
             this.picFotograf.Size = new System.Drawing.Size(113, 101);
             this.picFotograf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picFotograf.TabIndex = 8;
             this.picFotograf.TabStop = false;
             // 
-            // dateKimlikVerTarihi
-            // 
-            this.dateKimlikVerTarihi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateKimlikVerTarihi.Location = new System.Drawing.Point(121, 58);
-            this.dateKimlikVerTarihi.Name = "dateKimlikVerTarihi";
-            this.dateKimlikVerTarihi.Size = new System.Drawing.Size(186, 21);
-            this.dateKimlikVerTarihi.TabIndex = 36;
-            // 
             // txtImgImza
             // 
-            this.txtImgImza.Location = new System.Drawing.Point(121, 200);
+            this.txtImgImza.Location = new System.Drawing.Point(122, 123);
             this.txtImgImza.Name = "txtImgImza";
             this.txtImgImza.Size = new System.Drawing.Size(152, 21);
             this.txtImgImza.TabIndex = 42;
@@ -756,67 +704,40 @@ namespace nufus_kayit
             // dateKimlikGecTarihi
             // 
             this.dateKimlikGecTarihi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateKimlikGecTarihi.Location = new System.Drawing.Point(121, 87);
+            this.dateKimlikGecTarihi.Location = new System.Drawing.Point(122, 58);
             this.dateKimlikGecTarihi.Name = "dateKimlikGecTarihi";
             this.dateKimlikGecTarihi.Size = new System.Drawing.Size(186, 21);
             this.dateKimlikGecTarihi.TabIndex = 37;
             // 
             // txtImgFoto
             // 
-            this.txtImgFoto.Location = new System.Drawing.Point(121, 169);
+            this.txtImgFoto.Location = new System.Drawing.Point(122, 92);
             this.txtImgFoto.Name = "txtImgFoto";
             this.txtImgFoto.Size = new System.Drawing.Size(152, 21);
             this.txtImgFoto.TabIndex = 40;
             // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(50, 116);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(60, 16);
-            this.label22.TabIndex = 1;
-            this.label22.Text = "Sağ Mı?:";
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(71, 202);
+            this.label17.Location = new System.Drawing.Point(76, 125);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(39, 16);
             this.label17.TabIndex = 6;
             this.label17.Text = "İmza:";
             // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(31, 140);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(79, 16);
-            this.label24.TabIndex = 1;
-            this.label24.Text = "Ölüm Tarihi:";
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(49, 172);
+            this.label16.Location = new System.Drawing.Point(54, 95);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(61, 16);
             this.label16.TabIndex = 6;
             this.label16.Text = "Fotoğraf:";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(30, 61);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 16);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Veriliş Tarihi:";
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(11, 89);
+            this.label14.Location = new System.Drawing.Point(12, 60);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(104, 16);
             this.label14.TabIndex = 1;
@@ -845,7 +766,7 @@ namespace nufus_kayit
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(716, 651);
+            this.tabPage2.Size = new System.Drawing.Size(716, 600);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "📰 Kayıt Listesi";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -855,7 +776,7 @@ namespace nufus_kayit
             this.groupBox2.Controls.Add(this.dataKayitListesi);
             this.groupBox2.Location = new System.Drawing.Point(6, 71);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1006, 575);
+            this.groupBox2.Size = new System.Drawing.Size(704, 523);
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
             // 
@@ -864,7 +785,7 @@ namespace nufus_kayit
             this.dataKayitListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataKayitListesi.Location = new System.Drawing.Point(6, 11);
             this.dataKayitListesi.Name = "dataKayitListesi";
-            this.dataKayitListesi.Size = new System.Drawing.Size(698, 558);
+            this.dataKayitListesi.Size = new System.Drawing.Size(692, 503);
             this.dataKayitListesi.TabIndex = 46;
             // 
             // groupBox1
@@ -875,7 +796,7 @@ namespace nufus_kayit
             this.groupBox1.Controls.Add(this.btnKayitAra);
             this.groupBox1.Location = new System.Drawing.Point(6, 1);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1006, 70);
+            this.groupBox1.Size = new System.Drawing.Size(704, 70);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             // 
@@ -917,6 +838,7 @@ namespace nufus_kayit
             this.btnKayitAra.TabIndex = 44;
             this.btnKayitAra.Text = "🔍 ARA";
             this.btnKayitAra.UseVisualStyleBackColor = true;
+            this.btnKayitAra.Click += new System.EventHandler(this.btnKayitAra_Click);
             // 
             // tabPage3
             // 
@@ -925,20 +847,10 @@ namespace nufus_kayit
             this.tabPage3.Location = new System.Drawing.Point(4, 24);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(716, 651);
+            this.tabPage3.Size = new System.Drawing.Size(716, 600);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "⚙️ Ayarlar";
             this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // picImza
-            // 
-            this.picImza.Image = global::nufus_kayit.Properties.Resources.no_photo;
-            this.picImza.Location = new System.Drawing.Point(194, 231);
-            this.picImza.Name = "picImza";
-            this.picImza.Size = new System.Drawing.Size(113, 101);
-            this.picImza.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picImza.TabIndex = 8;
-            this.picImza.TabStop = false;
             // 
             // groupBox19
             // 
@@ -958,12 +870,13 @@ namespace nufus_kayit
             this.btnAyarKaydet.TabIndex = 1;
             this.btnAyarKaydet.Text = "💾 KAYDET";
             this.btnAyarKaydet.UseVisualStyleBackColor = true;
+            this.btnAyarKaydet.Click += new System.EventHandler(this.btnAyarKaydet_Click);
             // 
             // groupBox18
             // 
-            this.groupBox18.Controls.Add(this.cmbYukleniyor);
-            this.groupBox18.Controls.Add(this.cmbIkonGoster);
-            this.groupBox18.Controls.Add(this.cmbBasCalistir);
+            this.groupBox18.Controls.Add(this.chbYukleniyor);
+            this.groupBox18.Controls.Add(this.chbIkonGoster);
+            this.groupBox18.Controls.Add(this.chbBasCalistir);
             this.groupBox18.Location = new System.Drawing.Point(6, 6);
             this.groupBox18.Name = "groupBox18";
             this.groupBox18.Size = new System.Drawing.Size(238, 134);
@@ -971,56 +884,67 @@ namespace nufus_kayit
             this.groupBox18.TabStop = false;
             this.groupBox18.Text = " Mantıksal ";
             // 
-            // cmbYukleniyor
+            // chbYukleniyor
             // 
-            this.cmbYukleniyor.AutoSize = true;
-            this.cmbYukleniyor.Checked = true;
-            this.cmbYukleniyor.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cmbYukleniyor.Location = new System.Drawing.Point(21, 33);
-            this.cmbYukleniyor.Name = "cmbYukleniyor";
-            this.cmbYukleniyor.Size = new System.Drawing.Size(174, 20);
-            this.cmbYukleniyor.TabIndex = 0;
-            this.cmbYukleniyor.Text = "Yükleme Ekranını Göster";
-            this.cmbYukleniyor.UseVisualStyleBackColor = true;
+            this.chbYukleniyor.AutoSize = true;
+            this.chbYukleniyor.Location = new System.Drawing.Point(21, 33);
+            this.chbYukleniyor.Name = "chbYukleniyor";
+            this.chbYukleniyor.Size = new System.Drawing.Size(174, 20);
+            this.chbYukleniyor.TabIndex = 0;
+            this.chbYukleniyor.Text = "Yükleme Ekranını Göster";
+            this.chbYukleniyor.UseVisualStyleBackColor = true;
             // 
-            // cmbIkonGoster
+            // chbIkonGoster
             // 
-            this.cmbIkonGoster.AutoSize = true;
-            this.cmbIkonGoster.Location = new System.Drawing.Point(21, 87);
-            this.cmbIkonGoster.Name = "cmbIkonGoster";
-            this.cmbIkonGoster.Size = new System.Drawing.Size(102, 20);
-            this.cmbIkonGoster.TabIndex = 0;
-            this.cmbIkonGoster.Text = "İkonu Göster";
-            this.cmbIkonGoster.UseVisualStyleBackColor = true;
+            this.chbIkonGoster.AutoSize = true;
+            this.chbIkonGoster.Location = new System.Drawing.Point(21, 87);
+            this.chbIkonGoster.Name = "chbIkonGoster";
+            this.chbIkonGoster.Size = new System.Drawing.Size(102, 20);
+            this.chbIkonGoster.TabIndex = 0;
+            this.chbIkonGoster.Text = "İkonu Göster";
+            this.chbIkonGoster.UseVisualStyleBackColor = true;
             // 
-            // cmbBasCalistir
+            // chbBasCalistir
             // 
-            this.cmbBasCalistir.AutoSize = true;
-            this.cmbBasCalistir.Location = new System.Drawing.Point(21, 60);
-            this.cmbBasCalistir.Name = "cmbBasCalistir";
-            this.cmbBasCalistir.Size = new System.Drawing.Size(141, 20);
-            this.cmbBasCalistir.TabIndex = 0;
-            this.cmbBasCalistir.Text = "Başlangıçta Çalıştır";
-            this.cmbBasCalistir.UseVisualStyleBackColor = true;
+            this.chbBasCalistir.AutoSize = true;
+            this.chbBasCalistir.Location = new System.Drawing.Point(21, 60);
+            this.chbBasCalistir.Name = "chbBasCalistir";
+            this.chbBasCalistir.Size = new System.Drawing.Size(141, 20);
+            this.chbBasCalistir.TabIndex = 0;
+            this.chbBasCalistir.Text = "Başlangıçta Çalıştır";
+            this.chbBasCalistir.UseVisualStyleBackColor = true;
+            // 
+            // tmrZamanlama
+            // 
+            this.tmrZamanlama.Interval = 1000;
+            this.tmrZamanlama.Tick += new System.EventHandler(this.tmrZamanlama_Tick);
+            // 
+            // errHataMesaji
+            // 
+            this.errHataMesaji.ContainerControl = this;
             // 
             // frmVatandas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 691);
+            this.ClientSize = new System.Drawing.Size(734, 639);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmVatandas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nufus Kayıt Programı";
+            this.Load += new System.EventHandler(this.frmVatandas_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.groupButon.ResumeLayout(false);
-            this.groupAdres.ResumeLayout(false);
-            this.groupAdres.PerformLayout();
-            this.groupKisi.ResumeLayout(false);
-            this.groupKisi.PerformLayout();
-            this.groupDiger.ResumeLayout(false);
-            this.groupDiger.PerformLayout();
+            this.grpAdres.ResumeLayout(false);
+            this.grpAdres.PerformLayout();
+            this.grpKisi.ResumeLayout(false);
+            this.grpKisi.PerformLayout();
+            this.grpDiger.ResumeLayout(false);
+            this.grpDiger.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picImza)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFotograf)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -1028,10 +952,10 @@ namespace nufus_kayit
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picImza)).EndInit();
             this.groupBox19.ResumeLayout(false);
             this.groupBox18.ResumeLayout(false);
             this.groupBox18.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errHataMesaji)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1045,8 +969,8 @@ namespace nufus_kayit
         private System.Windows.Forms.Button btnGuncelle;
         private System.Windows.Forms.Button btnSil;
         private System.Windows.Forms.Button btnKaydet;
-        private System.Windows.Forms.GroupBox groupAdres;
-        private System.Windows.Forms.RichTextBox rtxtAcikAdres;
+        private System.Windows.Forms.GroupBox grpAdres;
+        private System.Windows.Forms.RichTextBox rtxtAdres;
         private System.Windows.Forms.ComboBox cmbUlke;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.ComboBox cmbIl;
@@ -1054,7 +978,7 @@ namespace nufus_kayit
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cmbIlce;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.GroupBox groupKisi;
+        private System.Windows.Forms.GroupBox grpKisi;
         private System.Windows.Forms.ComboBox cmbVerilisTuru;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.MaskedTextBox mtxtTelefon;
@@ -1070,9 +994,7 @@ namespace nufus_kayit
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.RadioButton rbtnKadin;
-        private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label32;
         private System.Windows.Forms.RadioButton rbtnErkek;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
@@ -1082,9 +1004,7 @@ namespace nufus_kayit
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox txtBireySiraNo;
         private System.Windows.Forms.TextBox txtCiltNo;
-        private System.Windows.Forms.TextBox txtKilo;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.TextBox txtBoy;
         private System.Windows.Forms.TextBox txtSeriNo;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtEmail;
@@ -1092,21 +1012,15 @@ namespace nufus_kayit
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.GroupBox groupDiger;
+        private System.Windows.Forms.GroupBox grpDiger;
         private System.Windows.Forms.Button btnSecImza;
         private System.Windows.Forms.Button btnSecFoto;
-        private System.Windows.Forms.CheckBox chSagMi;
-        private System.Windows.Forms.DateTimePicker dateOlumTarihi;
         private System.Windows.Forms.PictureBox picFotograf;
-        private System.Windows.Forms.DateTimePicker dateKimlikVerTarihi;
         private System.Windows.Forms.TextBox txtImgImza;
         private System.Windows.Forms.DateTimePicker dateKimlikGecTarihi;
         private System.Windows.Forms.TextBox txtImgFoto;
-        private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtVerenMakam;
@@ -1123,8 +1037,10 @@ namespace nufus_kayit
         private System.Windows.Forms.GroupBox groupBox19;
         private System.Windows.Forms.Button btnAyarKaydet;
         private System.Windows.Forms.GroupBox groupBox18;
-        private System.Windows.Forms.CheckBox cmbYukleniyor;
-        private System.Windows.Forms.CheckBox cmbIkonGoster;
-        private System.Windows.Forms.CheckBox cmbBasCalistir;
+        private System.Windows.Forms.CheckBox chbYukleniyor;
+        private System.Windows.Forms.CheckBox chbIkonGoster;
+        private System.Windows.Forms.CheckBox chbBasCalistir;
+        private System.Windows.Forms.Timer tmrZamanlama;
+        private System.Windows.Forms.ErrorProvider errHataMesaji;
     }
 }
