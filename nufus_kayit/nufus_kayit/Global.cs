@@ -340,7 +340,7 @@ namespace nufus_kayit
         #endregion
 
         #region 05: beniHatirla()
-        public void beniHatirla(int param)
+        public void ayarAl(int param)
         {
             if (param == 1)
             {

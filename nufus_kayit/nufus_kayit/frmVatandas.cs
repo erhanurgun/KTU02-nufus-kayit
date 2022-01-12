@@ -50,7 +50,9 @@ namespace nufus_kayit
         {
             Global global = new Global();
             global.chb = chbYukleniyor;
-            global.beniHatirla(2);
+            global.ayarAl(2);
+
+            MessageBox.Show("Ayarlar güncellendi.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnTemizle_Click(object sender, EventArgs e)

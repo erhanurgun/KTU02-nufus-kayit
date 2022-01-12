@@ -34,7 +34,7 @@ namespace nufus_kayit
                 txt_sifre = txtSifre.Text
             };
             global.chb = chbBeniHatirla;
-            global.beniHatirla(1);
+            global.ayarAl(1);
             global.dbBaglan(1);
         }
 
